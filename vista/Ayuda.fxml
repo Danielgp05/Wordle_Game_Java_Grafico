@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="797.0" prefWidth="1075.0" styleClass="fondoJuego" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.AyudaController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="143.0" layoutY="36.0" prefHeight="101.0" prefWidth="419.0" styleClass="titulo" text="¿COMO SE JUEGA?" textAlignment="CENTER" textFill="#eeebeb">
+         <font>
+            <Font name="Impact" size="49.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="112.0" layoutY="112.0" prefHeight="50.0" prefWidth="482.0" styleClass="titulo" text="Adivina la palabra en un máximo de 6 intentos" textAlignment="CENTER" textFill="#eeebeb">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="187.0" styleClass="titulo" text="Cada intento debe ser una palabra válida de 5 letras. &#10;No puedes indicar palabras que no tengan sentido o letras aleatorias. &#10;Pulse el botón Enviar para enviar la palabra intuida.&#10;" />
+      <Label layoutX="73.0" layoutY="257.0" styleClass="titulo" text="Después de cada intento el color de las letras cambia para mostrar qué tan cerca &#10;estás de acertar la palabra. Mira los ejemplos a continuación." />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="315.0" prefHeight="50.0" prefWidth="130.0" styleClass="titulo" text="EJEMPLOS" textAlignment="CENTER" textFill="#eeebeb">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="73.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="137.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="206.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="275.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="344.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="408.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="75.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="139.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="208.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="277.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="346.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="410.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="textField_A" editable="false" focusTraversable="false" layoutX="90.0" layoutY="401.0" text="A">
+         <styleClass>
+            <String fx:value="correct-position" />
+            <String fx:value="casillas" />
+         </styleClass></TextField>
+      <TextField editable="false" focusTraversable="false" layoutX="154.0" layoutY="401.0" styleClass="casillas" text="Y" />
+      <TextField editable="false" focusTraversable="false" layoutX="217.0" layoutY="401.0" styleClass="casillas" text="U" />
+      <TextField editable="false" focusTraversable="false" layoutX="278.0" layoutY="401.0" styleClass="casillas" text="D" />
+      <TextField editable="false" focusTraversable="false" layoutX="337.0" layoutY="401.0" styleClass="casillas" text="A" />
+      <TextField editable="false" focusTraversable="false" layoutX="90.0" layoutY="505.0" styleClass="casillas" text="C" />
+      <TextField fx:id="textField_I" editable="false" focusTraversable="false" layoutX="154.0" layoutY="505.0" text="I">
+         <styleClass>
+            <String fx:value="correct-letter" />
+            <String fx:value="casillas" />
+         </styleClass></TextField>
+      <TextField editable="false" focusTraversable="false" layoutX="217.0" layoutY="505.0" styleClass="casillas" text="N" />
+      <TextField editable="false" focusTraversable="false" layoutX="278.0" layoutY="505.0" styleClass="casillas" text="C" />
+      <TextField editable="false" focusTraversable="false" layoutX="337.0" layoutY="505.0" styleClass="casillas" text="O" />
+      <TextField editable="false" focusTraversable="false" layoutX="90.0" layoutY="610.0" styleClass="casillas" text="J" />
+      <TextField editable="false" focusTraversable="false" layoutX="154.0" layoutY="610.0" styleClass="casillas" text="U" />
+      <TextField editable="false" focusTraversable="false" layoutX="217.0" layoutY="610.0" styleClass="casillas" text="G" />
+      <TextField fx:id="textField_A2" editable="false" focusTraversable="false" layoutX="278.0" layoutY="610.0" text="A">
+         <styleClass>
+            <String fx:value="incorrect-letter" />
+            <String fx:value="casillas" />
+         </styleClass></TextField>
+      <TextField editable="false" focusTraversable="false" layoutX="337.0" layoutY="610.0" styleClass="casillas" text="R" />
+      <Label layoutX="85.0" layoutY="466.0" styleClass="titulo" text="La letra A está en la palabra y en el lugar correcto." />
+      <Label layoutX="81.0" layoutY="567.0" styleClass="titulo" text="La letra I está en la palabra pero en el lugar equivocado." />
+      <Label layoutX="82.0" layoutY="667.0" styleClass="titulo" text="La letra A no está en la palabra en ningún lugar." />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="582.0" layoutY="315.0" prefHeight="51.0" prefWidth="130.0" styleClass="titulo" text="PUNTUACIÓN" textAlignment="CENTER" textFill="#eeebeb">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="589.0" layoutY="386.0" prefHeight="289.0" prefWidth="384.0" styleClass="titulo" text="La distribución de puntos será la siguiente:&#10;Puntuación por Intentos:&#10;&#10;1er intento: 60 puntos&#10;2do intento: 50 puntos&#10;3er intento: 40 puntos&#10;4to intento: 30 puntos&#10;5to intento: 20 puntos&#10;6to intento: 10 puntos&#10;No adivina en 6 intentos: 0 puntos&#10;&#10;Para finalizar, +25 bonus por palabra correcta">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="576.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="640.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="709.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="778.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="847.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="911.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="575.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="639.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="708.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="777.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="846.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="910.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/raya_gris.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="174.0" fitWidth="160.0" layoutX="758.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

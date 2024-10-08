@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onKeyPressed="#pulsarTecla" prefHeight="612.0" prefWidth="514.0" styleClass="fondoLogin" stylesheets="@css/loginRegister.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.RegistroController">
+   <children>
+      <Label layoutX="126.0" layoutY="21.0" prefHeight="164.0" prefWidth="286.0" text="REGISTRARSE" textFill="#eeebeb">
+         <font>
+            <Font name="Impact" size="49.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text_fullName" layoutX="154.0" layoutY="145.0" prefHeight="29.0" prefWidth="206.0" promptText="NOMBRE" />
+      <TextField fx:id="text_Apellidos" layoutX="154.0" layoutY="185.0" prefHeight="29.0" prefWidth="206.0" promptText="APELLIDOS" />
+      <DatePicker fx:id="fechaNacimiento" layoutX="154.0" layoutY="229.0" prefHeight="29.0" prefWidth="206.0" promptText="FECHA DE NACIMIENTO" showWeekNumbers="true" />
+      <TextField fx:id="text_Usuario" layoutX="155.0" layoutY="273.0" prefHeight="29.0" prefWidth="206.0" promptText="NOMBRE DE USUARIO" stylesheets="@css/modoOscuro.css" />
+      <PasswordField fx:id="field_Constraseña" layoutX="154.0" layoutY="317.0" prefHeight="29.0" prefWidth="206.0" promptText="CONTRASEÑA" />
+      <CheckBox fx:id="mostrarConstraseña" layoutX="182.0" layoutY="354.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="153.0" text="Mostrar Constraseña" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="13.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="boton_Registrarse" layoutX="154.0" layoutY="385.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="206.0" styleClass="iniciarSesionRegistrarse" stylesheets="@css/loginRegister.css" text="REGISTRARSE" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="iniciarSesion" layoutX="159.0" layoutY="437.0" text="¿Ya eres miembro? Inicia Sesión" textFill="#ddd6d6">
+         <font>
+            <Font name="Impact" size="14.0" />
+         </font>
+      </Hyperlink>
+      <TextField fx:id="constraseñaVisible" focusTraversable="false" layoutX="154.0" layoutY="317.0" prefHeight="29.0" prefWidth="206.0" promptText="CONTRASEÑA" visible="false" />
+   </children>
+</AnchorPane>

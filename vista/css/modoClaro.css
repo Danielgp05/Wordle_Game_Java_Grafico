@@ -1,0 +1,169 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.fondoJuego{
+	-fx-background-color:  #ffffff;
+}
+
+.titulo{
+	-fx-text-fill: black;
+}
+
+/* Estilo base para todas las casillas en modo claro */
+.casillas {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-border-color: #d3d6da; /* Borde gris claro */
+    -fx-border-width: 2px;
+    -fx-background-color: #ffffff; /* Fondo blanco */
+    -fx-text-fill: black; /* Texto negro */
+    -fx-pref-width: 50px;
+    -fx-pref-height: 50px;
+}
+
+/* Estilo para casillas con letras correctas en la posición correcta */
+.correct-position {
+    -fx-background-color: #6aaa64; /* Color verde claro */
+    -fx-text-fill: white;
+    
+}
+
+/* Estilo para casillas con letras correctas en la posición incorrecta */
+.correct-letter {
+    -fx-background-color: #c9b458; /* Color amarillo claro */
+    -fx-text-fill: white;
+}
+
+/* Estilo para casillas con letras incorrectas */
+.incorrect-letter {
+    -fx-background-color: #787c7e; /* Color gris oscuro */
+    -fx-text-fill: white;
+}
+
+.tecla {
+    -fx-background-color: #f0f0f0; /* Color de fondo claro */
+    -fx-text-fill: black; /* Color del texto */
+    -fx-font-size: 12px; /* Tamaño de la fuente */
+    -fx-font-weight: bold; /* Peso de la fuente */
+    -fx-border-color: #ccc; /* Color del borde */
+    -fx-border-width: 1px; /* Ancho del borde */
+}
+
+/* Estilo para las teclas del teclado en modo claro al pasar el ratón */
+.tecla:hover {
+    -fx-background-color: #e0e0e0; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo para las teclas del teclado en modo claro al presionar */
+.tecla:pressed {
+    -fx-background-color: #d0d0d0; /* Color de fondo al presionar */
+}
+
+/* Modo claro */
+.claro_oscuro {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-padding: 8px 18px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.alert {
+    -fx-background-color: #ffffff; /* Color de fondo claro */
+}
+
+.alert .dialog-pane {
+    -fx-background-color: #f0f0f0; /* Color de fondo del área del contenido */
+}
+
+.alert .header-panel {
+    -fx-background-color: #d3d3d3; /* Color de fondo del encabezado */
+}
+
+.alert .content {
+    -fx-text-fill: #000000; /* Color del texto en negro */
+    -fx-font-size: 14px;
+}
+
+.alert .button-bar .button {
+    -fx-background-color: #538d4e; /* Color verde oscuro */
+    -fx-text-fill: white; /* Color del texto de los botones en blanco */
+}
+
+.textField {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-color: #d3d6da; /* Borde gris claro */
+    -fx-border-width: 2px;
+    -fx-background-color: #ffffff; /* Fondo blanco */
+    -fx-text-fill: black; /* Texto negro */
+}
+
+/* Estilo base para la TableView */
+.table-view {
+    -fx-background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Estilo para la fila de encabezado */
+.table-view .column-header-background {
+    -fx-background-color: #CCCCCC; /* Color de fondo de la fila de encabezado */
+}
+
+/* Estilo para el texto del encabezado */
+.table-view .column-header, .table-view .nested-column-header {
+    -fx-text-fill: black; /* Color del texto del encabezado */
+    -fx-font-size: 14px; /* Tamaño de la fuente */
+    -fx-font-weight: bold; /* Peso de la fuente */
+    -fx-border-color: #444444; /* Color del borde */
+    -fx-border-width: 1px; /* Ancho del borde */
+}
+
+/* Estilo para las celdas de la TableView */
+.table-cell {
+    -fx-font-size: 14px; /* Tamaño de fuente */
+    -fx-font-weight: bold; /* Peso de la fuente */
+    -fx-border-color: #444444; /* Color del borde */
+    -fx-border-width: 1px; /* Ancho del borde */
+    -fx-text-fill: black; /* Color del texto */
+}
+
+/* Estilo para las filas pares */
+.table-row-cell:even {
+    -fx-background-color: #f0f0f0; /* Color de fondo para filas pares */
+}
+
+/* Estilo para las filas impares */
+.table-row-cell:odd {
+    -fx-background-color: #d3d3d3; /* Color de fondo para filas impares */
+}
+
+/* Estilo para las filas seleccionadas */
+.table-row-cell:selected {
+    -fx-background-color: #787c7e; /* Color de fondo para filas seleccionadas */
+    -fx-text-fill: white; /* Color del texto en filas seleccionadas */
+}
+
+/* Estilo para el BarChart */
+.chart-bar {
+    -fx-bar-fill: #538d4e; /* Color de relleno de las barras */
+    -fx-border-color: #444444; /* Color del borde */
+    -fx-border-width: 1px; /* Ancho del borde */
+}
+
+/* Estilo para las etiquetas del eje X */
+.chart-axis-label {
+    -fx-font-size: 14px; /* Tamaño de la fuente */
+    -fx-text-fill: black; /* Color del texto */
+}
+
+/* Estilo para las etiquetas del eje Y */
+.chart-vertical-zero-line {
+    -fx-stroke: black; /* Color de la línea de referencia */
+}
+
+/* Estilo para los puntos de datos */
+.chart-line-symbol {
+    -fx-background-color: #538d4e, #538d4e; /* Color del símbolo */
+    -fx-border-color: #444444; /* Color del borde */
+}
